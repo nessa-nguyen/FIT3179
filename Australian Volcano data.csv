@@ -1,0 +1,23 @@
+﻿Volcano Number,Volcano Name,Eruption Number,Eruption Category,Area of Activity,VEI,VEI Modifier,Start Year Modifier,Start Year,Start Year Uncertainty,Start Month,Start Day Modifier,Start Day,Start Day Uncertainty,Evidence Method (dating),End Year Modifier,End Year,End Year Uncertainty,End Month,End Day Modifier,End Day,End Day Uncertainty,Latitude,Longitude
+234010,Heard,20768,Confirmed Eruption,Mawson Peak,0,,,2012,,9,,5,4,Historical Observations,>,2020,,9,,5,,-53.106,73.513
+234010,Heard,14412,Confirmed Eruption,Mawson Peak,0,,,2006,,3,,11,,Historical Observations,,2008,,3,,3,,-53.106,73.513
+234011,McDonald Islands,14399,Confirmed Eruption,,0,,,2005,,7,<,12,,Historical Observations,,,,,,,,-53.03,72.6
+234011,McDonald Islands,14398,Uncertain Eruption,,1,?,,2004,,11,,14,,,,2004,,11,,14,,-53.03,72.6
+234010,Heard,14410,Confirmed Eruption,Mawson Peak,0,,,2003,,6,,9,,Historical Observations,,2004,,6,,14,,-53.106,73.513
+234011,McDonald Islands,14397,Confirmed Eruption,,1,?,,2001,,5,,3,150,Historical Observations,,,,,,,,-53.03,72.6
+234010,Heard,14409,Confirmed Eruption,Mawson Peak and upper south flank,2,,,2000,,3,?,7,,Historical Observations,,2001,,2,,16,15,-53.106,73.513
+234011,McDonald Islands,14396,Confirmed Eruption,Northern part of McDonald Island,1,?,,1996,,12,,16,15,Historical Observations,,1997,,2,,10,30,-53.03,72.6
+234010,Heard,14408,Confirmed Eruption,Mawson Peak,2,?,,1993,,1,,2,15,Historical Observations,,,,,,,,-53.106,73.513
+234011,McDonald Islands,14395,Confirmed Eruption,Submarine vent near McDonald Islands,0,,,1992,,12,,16,15,Historical Observations,,,,,,,,-53.03,72.6
+234010,Heard,14407,Confirmed Eruption,Mawson Peak,0,,,1992,,5,?,29,,Historical Observations,,,,,,,,-53.106,73.513
+234010,Heard,14406,Uncertain Eruption,Mawson Peak,,,,1992,,1,,17,,,,1992,,1,,18,,-53.106,73.513
+234010,Heard,14405,Confirmed Eruption,Mawson Peak,2,?,,1985,,1,,14,,Historical Observations,,1987,,1,?,16,15,-53.106,73.513
+234010,Heard,14404,Confirmed Eruption,Mawson Peak,2,,,1954,,4,?,13,,Historical Observations,,1954,,6,?,13,,-53.106,73.513
+234010,Heard,14403,Confirmed Eruption,Mawson Peak,2,,,1953,,8,,20,,Historical Observations,,1953,,11,,18,,-53.106,73.513
+234010,Heard,14402,Confirmed Eruption,Mawson Peak,2,,,1950,,1,,24,,Historical Observations,,1952,,3,?,12,,-53.106,73.513
+234010,Heard,14401,Confirmed Eruption,Mawson Peak,2,,,1910,,3,,0,,Historical Observations,,1910,,4,,0,,-53.106,73.513
+234010,Heard,14400,Uncertain Eruption,,2,,,1881,,6,,2,,,,,,,,,,-53.106,73.513
+259010,Newer Volcanics Province,15373,Confirmed Eruption,Mt. Gambier,,,,-2900,150,0,,0,,Radiocarbon (uncorrected),,,,,,,,-37.77,142.5
+259010,Newer Volcanics Province,15372,Confirmed Eruption,Mt. Schank,,,,-3000,500,0,,0,,Fission track,,,,,,,,-37.77,142.5
+259010,Newer Volcanics Province,15371,Confirmed Eruption,Mt. Napier,,,<,-5290,,0,,0,,Radiocarbon (uncorrected),,,,,,,,-37.77,142.5
+259010,Newer Volcanics Province,15370,Confirmed Eruption,Red Rock,,,?,-5850,,0,,0,,Radiocarbon (uncorrected),,,,,,,,-37.77,142.5
