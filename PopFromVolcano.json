@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Population within a certain distance from volcanoes",
+  "title": "Population Within a Certain Distance From Volcanoes",
   "width": 600,
   "height": 300,
   "data": {
