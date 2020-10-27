@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Population within a certain distance from volcanoes",
+  "width": 600,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/nessa-nguyen/FIT3179-Assignment2/main/volcano.csv"
+  },
+  "transform": [
+    {"window": [{"op": "count", "as": "index"}]},
+    {"fold": ["5km", "10km", "30km", "100km"]}
+  ],
+  "mark": "line",
+  "encoding": {
+    "tooltip": [
+      {"field": "5km", "title": "Population from:    5km"},
+      {"field": "10km"},
+      {"field": "30km"},
+      {"field": "100km"}
+    ],
+    "color": {
+      "type": "quantitative",
+      "field": "100km",
+      "scale": {
+        "type": "threshold",
+        "domain": [0, 8000000, 16000000, 24000000, 32000000],
+        "range": [
+          "#FFFFFF",
+          "#b3cde0",
+          "#6497b1",
+          "#005b96",
+          "#03396c",
+          "#011f4b"
+        ]
+      },
+      "title": "Population within 100 km"
+    },
+    "detail": {"type": "nominal", "field": "index"},
+    "opacity": {"value": 0.5},
+    "x": {
+      "type": "nominal",
+      "field": "key",
+      "sort": [""],
+      "title": "Distance from volcano"
+    },
+    "y": {"type": "quantitative", "field": "value", "title": "Population"}
+  },
+  "config": {
+    "axisX": {"domain": false, "labelAngle": 0, "tickColor": "#FFF"},
+    "axisY": {"domain": false, "labelAngle": 0, "tickColor": "#FFF"},
+    "view": {"stroke": null},
+    "style": {
+      "label": {
+        "baseline": "middle",
+        "align": "right",
+        "dx": -5,
+        "tooltip": null
+      },
+      "tick": {"orient": "horizontal", "tooltip": null}
+    }
+  }
+}

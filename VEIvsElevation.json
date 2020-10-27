@@ -1,0 +1,81 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 500,
+  "height": 400,
+  "title": "Volcanic Explosivity Index vs. Elevation of volcano",
+  "data": {
+    "url": "https://raw.githubusercontent.com/nessa-nguyen/FIT3179-Assignment2/main/significant-volcanic-eruption.csv"
+  },
+  "params": [
+    {
+      "name": "Volcano_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Caldera",
+          "Cinder cone",
+          "Complex volcano",
+          "Compound volcano",
+          "Crater rows",
+          "Fissure vent",
+          "Lava cone",
+          "Lava dome",
+          "Maar",
+          "Pyroclastic cone",
+          "Pyroclastic shield",
+          "Shield volcano",
+          "Stratovolcano",
+          "Subglacial volcano",
+          "Submarine volcano",
+          "Tuff cone",
+          "Volcanic field"
+        ],
+        "labels": [
+          "Show All",
+          "Caldera",
+          "Cinder cone",
+          "Complex volcano",
+          "Compound volcano",
+          "Crater rows",
+          "Fissure vent",
+          "Lava cone",
+          "Lava dome",
+          "Maar",
+          "Pyroclastic cone",
+          "Pyroclastic shield",
+          "Shield volcano",
+          "Stratovolcano",
+          "Subglacial volcano",
+          "Submarine volcano",
+          "Tuff cone",
+          "Volcanic field"
+        ],
+        "name": "Volcano Type Selection: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "Volcano_selection == null || datum.Volcano_Type == Volcano_selection"
+    }
+  ],
+  "mark": "circle",
+  "encoding": {
+    "x": {"field": "Volcanic Explosivity Index", "type": "quantitative"},
+    "y": {
+      "field": "Elevation",
+      "type": "quantitative",
+      "title": "Elevation (m)"
+    },
+    "color": {"field": "Volcano_Type", "type": "nominal"},
+    "size": {"field": "Volcanic Explosivity Index", "type": "quantitative"},
+    "tooltip": [
+      {"field": "Volcano Name"},
+      {"field": "Country"},
+      {"field": "Year"},
+      {"field": "Volcano_Type"}
+    ]
+  },
+  "config": {"legend": {"disable": true}}
+}

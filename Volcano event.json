@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "A simple bar chart with embedded data.",
+  "title": "Volcano events",
+  "data": {
+    "url": "https://raw.githubusercontent.com/nessa-nguyen/FIT3179-Assignment2/main/events.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.event_type !== 'Ash Plume'&&datum.event_type !== 'Ashfall'&&datum.event_type !== 'Degassing'&&datum.event_type !== 'Directed explosion'&&datum.event_type !== 'Fissure formation'&&datum.event_type !== 'Incandescent ejecta'&&datum.event_type !== 'Edifice destroyed'&&datum.event_type !== 'Mud'&&datum.event_type !== 'Observation'&&datum.event_type !== 'Partial collapse at end of eruption'&&datum.event_type !== 'Spine formation'&&datum.event_type !== 'VEI (Explosivity Index)'&&datum.event_type !== 'Explosion'&&datum.event_type !== 'Water fountain'"
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "event_type", "type": "nominal", "title": ""},
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Amount of eruptions"
+    },
+    "color": {"value": "#DC143C"},
+    "tooltip": {"field": "event_type", "title": "Event"}
+  },
+  "config": {}
+}
