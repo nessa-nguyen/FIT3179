@@ -4,7 +4,7 @@
   "width": 400,
   "height": 400,
   "data": {
-    "url": "https://raw.githubusercontent.com/nessa-nguyen/Homework-Week-10/main/eruptions.csv"
+    "url": "https://raw.githubusercontent.com/nessa-nguyen/FIT3179-Assignment2/main/eruptions.csv"
   },
   "transform": [
     {"filter": "datum.vei !== 'NA'"},
