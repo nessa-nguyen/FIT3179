@@ -22,5 +22,8 @@
     "color": {"value": "#DC143C"},
     "tooltip": {"field": "event_type", "title": "Event"}
   },
-  "config": {}
+  "config": {
+    "axisX": {"domain": false, "labelAngle": 0, "tickColor": "#FFF"},
+    "axisY": {"domain": false, "labelAngle": 0, "tickColor": "#FFF"}
+  }
 }
