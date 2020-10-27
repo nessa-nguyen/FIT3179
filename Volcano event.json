@@ -19,7 +19,14 @@
       "title": "Amount of eruptions"
     },
     "color": {"value": "#DC143C"},
-    "tooltip": {"field": "event_type", "title": "Event"}
+    "tooltip": [
+      {"field": "event_type", "title": "Event"},
+      {
+        "aggregate": "count",
+        "type": "nominal",
+        "title": "Amount of Eruptions"
+      }
+    ]
   },
   "config": {
     "axisX": {"domain": false, "tickColor": "#FFF"},
