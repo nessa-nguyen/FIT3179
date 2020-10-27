@@ -42,7 +42,7 @@
           },
           "title": "year"
         },
-        "size": {"field": "vei", "title": "Volcano Explosivity Index"}
+        "size": {"field": "vei", "title": "VEI"}
       }
     }
   ],
