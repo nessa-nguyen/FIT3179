@@ -40,7 +40,7 @@
             "domain": [-4000, 0, 2000],
             "range": ["#fdbe85", "#fd8d3c", "#e6550d", "#a63603"]
           },
-          "title": "year"
+          "title": "Year"
         },
         "size": {"field": "vei", "title": "VEI"}
       }
