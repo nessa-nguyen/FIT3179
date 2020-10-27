@@ -23,7 +23,7 @@
     "tooltip": {"field": "event_type", "title": "Event"}
   },
   "config": {
-    "axisX": {"domain": false, "labelAngle": 90, "tickColor": "#FFF"},
+    "axisX": {"domain": false, "tickColor": "#FFF"},
     "axisY": {"domain": false, "labelAngle": 0, "tickColor": "#FFF"}
   }
 }
