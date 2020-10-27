@@ -2,7 +2,6 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "description": "A simple bar chart with embedded data.",
   "width": 900,
-  "title": "Frequency of Events That Occur During Eruptions",
   "data": {
     "url": "https://raw.githubusercontent.com/nessa-nguyen/FIT3179-Assignment2/main/events.csv"
   },
