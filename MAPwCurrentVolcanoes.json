@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 500,
+  "width": 560,
   "height": 300,
   "title": "Current Active Volcano Locations",
   "projection": {"type": "equalEarth"},
