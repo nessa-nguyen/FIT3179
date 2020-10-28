@@ -62,11 +62,12 @@
   ],
   "mark": "circle",
   "encoding": {
-    "x": {"field": "vei", "title": "Volcanic Explosivity Index"},
+    "x": {"field": "vei", "title": "Volcanic Explosivity Index", "scale": {"domain": [0, 1, 2, 3, 4, 5, 6, 7]}},
     "y": {
       "field": "Elevation",
       "type": "quantitative",
-      "title": "Elevation (m)"
+      "title": "Elevation (m)", 
+      "scale": {"domain": [-1000, 6000]}
     },
     "color": {"field": "Volcano_Type", "type": "nominal"},
     "size": {"value": 100},
