@@ -1,3 +1,4 @@
+  
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": "Frequency of Volcanic Explosivity Index (VEI)",
@@ -10,9 +11,6 @@
     {"filter": "datum.vei !== 'NA'"},
     {"filter": "datum.start_year > Year_Above"}
   ],
-  "selection": {
-    "vei_highlight": {"type": "multi", "fields": ["vei"], "bind": "legend"}
-  },
   "params": [
     {
       "name": "Year_Above",
@@ -34,10 +32,21 @@
       "type": "quantitative",
       "title": "Amount of eruptions"
     },
-    "color": {"field": "vei", "type": "nominal", "title": "VEI"},
-    "opacity": {
-      "condition": {"selection": "vei_highlight", "value": 0.6},
-      "value": 0.2
+    "color": {
+      "field": "vei", 
+      "type": "nominal", 
+      "scale":{
+        "domain": [0,1,2,3,4,5,6,7],
+        "range": ["#960018",
+          "#7C0A02",
+          "#420D09",
+          "#800000",
+          "#B80F0A",
+          "#CD5C5C",
+          "#FA8072",
+          "#EAC3"]
+      },
+      "title": "VEI"
     },
     "tooltip": [
       {"field": "vei", "type": "nominal", "title": "VEI"},
