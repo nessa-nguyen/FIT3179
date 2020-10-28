@@ -74,7 +74,7 @@
       {"field": "Volcano Name"},
       {"field": "Country"},
       {"field": "Year"},
-      {"field": "Volcano_Type"}
+      {"field": "Volcano_Type", "title": "Volcano Type"}
     ]
   },
   "config": {"legend": {"disable": true}}
