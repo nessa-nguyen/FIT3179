@@ -2,7 +2,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": "Frequency of Volcanic Explosivity Index (VEI)",
-  "width": 610,
+  "width": 580,
   "height": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/nessa-nguyen/FIT3179-Assignment2/main/eruptions.csv"
