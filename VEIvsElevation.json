@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 400,
+  "width": 610,
   "height": 400,
   "title": "Volcanic Explosivity Index vs. Elevation of Volcanoes",
   "data": {
@@ -58,18 +58,19 @@
   "transform": [
     {
       "filter": "Volcano_selection == null || datum.Volcano_Type == Volcano_selection"
-    }
+    },
+    {"filter": "datum.vei !== ''"}
   ],
   "mark": "circle",
   "encoding": {
-    "x": {"field": "Volcanic Explosivity Index", "type": "quantitative"},
+    "x": {"field": "vei", "title": "Volcanic Explosivity Index"},
     "y": {
       "field": "Elevation",
       "type": "quantitative",
       "title": "Elevation (m)"
     },
     "color": {"field": "Volcano_Type", "type": "nominal"},
-    "size": {"field": "Volcanic Explosivity Index", "type": "quantitative"},
+    "size": {"value": 100},
     "tooltip": [
       {"field": "Volcano Name"},
       {"field": "Country"},
@@ -77,5 +78,19 @@
       {"field": "Volcano_Type", "title": "Volcano Type"}
     ]
   },
-  "config": {"legend": {"disable": true}}
+  "config": {
+    "axisX": {"domain": false, "labelAngle": 0, "tickColor": "#FFFFFF"},
+    "axisY": {"domain": false, "labelAngle": 0, "tickColor": "#FFFFFF"},
+    "view": {"stroke": null},
+    "legend": {"disable": true},
+    "style": {
+      "label": {
+        "baseline": "middle",
+        "align": "right",
+        "dx": -5,
+        "tooltip": null
+      },
+      "tick": {"orient": "horizontal", "tooltip": null}
+    }
+  }
 }
