@@ -3,27 +3,43 @@
   "width": 900,
   "height": 500,
   "projection": {"type": "equalEarth"},
+  "params": [
+    {
+      "name": "Year_Above",
+      "value": -12000,
+      "bind": {
+        "input": "range",
+        "min": -12000,
+        "max": 2020,
+        "step": 100,
+        "name": "Data after: "
+      }
+    }
+  ],
   "layer": [
     {
       "data": {
         "url": "https://raw.githubusercontent.com/nessa-nguyen/nessa-nguyen.github.io/main/ne_110m_land.json",
         "format": {"type": "topojson", "feature": "ne_110m_land"}
       },
-      "mark": {"type": "geoshape", "fill": "#6CA349", "stroke": "white"}
+      "mark": {"type": "geoshape", "fill": "#addd8e", "stroke": "white"}
     },
     {
       "data": {
         "url": "https://raw.githubusercontent.com/nessa-nguyen/FIT3179-Assignment2/main/Filled%20plates.json",
         "format": {"type": "topojson", "feature": "PB2002_plates"}
       },
-      "mark": {"type": "geoshape", "filled": false, "strokeWidth": 2},
-      "encoding": {"color": {"value": "#d1edf2"}}
+      "mark": {"type": "geoshape", "filled": false, "strokeWidth": 1},
+      "encoding": {"color": {"value": "#31a354"}}
     },
     {
       "data": {
         "url": "https://raw.githubusercontent.com/nessa-nguyen/nessa-nguyen.github.io/main/eruptions.csv"
       },
-      "transform": [{"filter": "datum.vei !== 'NA'"}],
+      "transform": [
+        {"filter": "datum.vei !== 'NA'"},
+        {"filter": "datum.start_year > Year_Above"}
+      ],
       "mark": {"type": "circle"},
       "encoding": {
         "longitude": {"field": "longitude", "type": "quantitative"},
